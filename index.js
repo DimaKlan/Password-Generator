@@ -28,7 +28,7 @@ function generate() {
 		return result.textContent = 'The password must consist of 2 characters!'
 	}else if (inputLength >= 101){
 		return result.textContent = 'The password cannot contain more than 100 characters!'
-	}else if (!inputUpper.checked && !inputLower.checked && !inputNum.checked && inputSymbols.checked){
+	}else if (!inputUpper.checked && !inputLower.checked && !inputNum.checked && !inputSymbols.checked){
 		return result.textContent = 'Select at least one item'
 	}else {
 		return result.textContent = `Password: ${password}`
